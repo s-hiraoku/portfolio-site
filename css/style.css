@@ -28,6 +28,12 @@ p {
   line-height: 1.7;
   font-size: 1.125rem;
 }
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
 
 h2 {
   font-size: 3rem;
@@ -54,6 +60,11 @@ header {
   background-color: var(--bg);
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  header {
+    font-size: 1rem;
+  }
+}
 
 .wrapper {
   position: relative;
@@ -70,6 +81,11 @@ section {
 
 .logo {
   padding: 0 5rem;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    padding: 0 1rem;
+  }
 }
 
 .hero {
@@ -107,13 +123,28 @@ section {
   font-size: 2rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 767px) {
+  .hero .text-section .title {
+    font-size: 1.5rem;
+  }
+}
 .hero .text-section .name {
   font-family: "Dancing Script", cursive;
   font-size: 7rem;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 767px) {
+  .hero .text-section .name {
+    font-size: 4rem;
+  }
+}
 .hero .text-section .link :hover {
   color: #0bd;
+}
+@media screen and (max-width: 767px) {
+  .hero .text-section {
+    padding-top: 12vh;
+  }
 }
 .hero video {
   -o-object-fit: cover;
@@ -130,16 +161,19 @@ section {
 }
 
 .btn-menu {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: var(--font);
-  padding: 0.5rem 1rem;
-}
-
-.btn-menu {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  .btn-menu {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--font);
+    width: 4.5rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 .main-nav {
@@ -152,9 +186,34 @@ section {
 .main-nav :hover {
   color: #0bd;
 }
-
 .main-nav li {
   margin: 0 0 0 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .main-nav li {
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-nav {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    display: block;
+  }
+  .main-nav a {
+    display: block;
+  }
+  .main-nav.open-menu {
+    right: 0px;
+    width: 100%;
+    background-color: var(--bg);
+  }
 }
 
 .header-spacer {
