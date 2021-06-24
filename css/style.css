@@ -20,7 +20,7 @@ html {
 
 body {
   color: var(--font);
-  background: var(--bg);
+  background: #fff;
   font-family: impact, sans-serif;
 }
 
@@ -32,10 +32,10 @@ p {
 h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
-h1,
-h2 {
+h1 {
   text-align: center;
 }
 
@@ -76,10 +76,12 @@ section {
   position: relative;
   color: #fff;
   background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 .hero .video-size, .hero .video-pattern, .hero .text-section {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 }
 .hero .text-section {
   font-family: "Bree Serif";
@@ -159,9 +161,59 @@ section {
   height: 10vh;
 }
 
+.works h2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd673), to(#ff9f67));
+  background: linear-gradient(#ffd673, #ff9f67);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.skills {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a2e29b), to(#00a2af));
+  background-image: linear-gradient(#a2e29b, #00a2af);
+  padding: 7rem 0;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+.skills h2 {
+  color: #333;
+}
+
+.about h2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4db1ec), to(#1665cc));
+  background: linear-gradient(#4db1ec, #1665cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb2c1), to(#b473bf));
+  background-image: linear-gradient(#ffb2c1, #b473bf);
+  padding: 6rem 1rem 2rem;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+.contact h2 {
+  color: #fff;
+}
+
 footer {
-  text-align: center;
-  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: var(--font);
+  background-color: var(--bg);
 }
 
 .footer-link {

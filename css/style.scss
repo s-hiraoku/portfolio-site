@@ -33,7 +33,7 @@ html {
 }
 body {
   color: $font;
-  background: $bg;
+  background: $white;
   font-family: impact, sans-serif;
 }
 
@@ -44,9 +44,9 @@ p {
 h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
-h1,
-h2 {
+h1 {
   text-align: center;
 }
 header {
@@ -77,9 +77,10 @@ section {
   position: relative;
   color: $white;
   background-color: $black;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   .video-size {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
   }
   .text-section {
     @extend .video-size;
@@ -149,8 +150,10 @@ section {
   }
 }
 
-.main-nav li {
-  margin: 0 0 0 1.5rem;
+.main-nav {
+  li {
+    margin: 0 0 0 1.5rem;
+  }
 }
 
 .header-spacer {
@@ -158,11 +161,51 @@ section {
 }
 
 .works {
+  h2 {
+    background: linear-gradient($yellow, $orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
+
+.skills {
+  h2 {
+    color: $grey;
+  }
+  background-image: linear-gradient($light-green, $green);
+  padding: 7rem 0;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.about {
+  h2 {
+    background: linear-gradient($light-blue, $blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
+
+.contact {
+  background-image: linear-gradient($pink, $purple);
+  padding: 6rem 1rem 2rem;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  h2 {
+    color: $white;
+  }
 }
 
 footer {
-  text-align: center;
-  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  color: $font;
+  background-color: $bg;
 }
 .footer-link {
   margin-bottom: 0.5rem;
