@@ -209,7 +209,7 @@ section {
 
 .works {
   h2 {
-    background: linear-gradient($yellow, $orange);
+    background: linear-gradient($pink, $purple);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
@@ -220,7 +220,7 @@ section {
   h2 {
     color: $grey;
   }
-  background-image: linear-gradient($light-green, $green);
+  background-image: linear-gradient($blue, $light-blue);
   padding: 7rem 0;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
@@ -228,7 +228,7 @@ section {
 
 .about {
   h2 {
-    background: linear-gradient($light-blue, $blue);
+    background: linear-gradient($light-green, $green);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -237,7 +237,7 @@ section {
 }
 
 .contact {
-  background-image: linear-gradient($pink, $purple);
+  background-image: linear-gradient($yellow, $green);
   padding: 6rem 1rem 2rem;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);

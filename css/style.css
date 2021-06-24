@@ -221,8 +221,8 @@ section {
 }
 
 .works h2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffd673), to(#ff9f67));
-  background: linear-gradient(#ffd673, #ff9f67);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb2c1), to(#b473bf));
+  background: linear-gradient(#ffb2c1, #b473bf);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,8 +230,8 @@ section {
 }
 
 .skills {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a2e29b), to(#00a2af));
-  background-image: linear-gradient(#a2e29b, #00a2af);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1665cc), to(#4db1ec));
+  background-image: linear-gradient(#1665cc, #4db1ec);
   padding: 7rem 0;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
@@ -241,8 +241,8 @@ section {
 }
 
 .about h2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4db1ec), to(#1665cc));
-  background: linear-gradient(#4db1ec, #1665cc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a2e29b), to(#00a2af));
+  background: linear-gradient(#a2e29b, #00a2af);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -250,8 +250,8 @@ section {
 }
 
 .contact {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb2c1), to(#b473bf));
-  background-image: linear-gradient(#ffb2c1, #b473bf);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd673), to(#00a2af));
+  background-image: linear-gradient(#ffd673, #00a2af);
   padding: 6rem 1rem 2rem;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
